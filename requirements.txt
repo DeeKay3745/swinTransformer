@@ -1,0 +1,6 @@
+ipykernel
+transformers
+datasets
+torch 
+scikit-learn
+torchvision
