@@ -4,3 +4,4 @@ datasets
 torch 
 scikit-learn
 torchvision
+matplotlib
