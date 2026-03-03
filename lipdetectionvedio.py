@@ -7,7 +7,7 @@ mp_face_mesh = mp.solutions.face_mesh
 
 face_mesh = mp_face_mesh.FaceMesh(
     static_image_mode=False,
-    max_num_faces=1,
+    max_num_faces=3,
     refine_landmarks=True,
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5
@@ -22,7 +22,7 @@ LIP_INDEXES = [
 ]
 
 # Load video
-cap = cv2.VideoCapture("input.mp4")
+cap = cv2.VideoCapture("./lipdetection/PixVerse_V5.6_Image_Text_360P_generate_a_video.mp4")
 
 # Get video properties
 fps = int(cap.get(cv2.CAP_PROP_FPS))
