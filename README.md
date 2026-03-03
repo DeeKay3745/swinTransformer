@@ -19,19 +19,19 @@ This project leverages **lip-reading from video input** using modern deep learni
 ---
 
 ## 🏗️ Proposed Pipeline
-Video Input
-↓
-Face Detection
-↓
-Lip Region Cropping
-↓
-Spatio-Temporal Feature Extraction (3D CNN / Swin Transformer)
-↓
-Temporal Modeling (BiGRU / Transformer)
-↓
-CTC / Seq2Seq Decoder
-↓
-Predicted Text
+Video Input<br>
+↓<br>
+Face Detection<br>
+↓<br>
+Lip Region Cropping<br>
+↓<br>
+Spatio-Temporal Feature Extraction (3D CNN / Swin Transformer)<br>
+↓<br>
+Temporal Modeling (BiGRU / Transformer)<br>
+↓<br>
+CTC / Seq2Seq Decoder<br>
+↓<br>
+Predicted Text<br>
 
 
 ---
