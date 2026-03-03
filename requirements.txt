@@ -7,5 +7,5 @@ torchvision
 matplotlib
 #this is the library. for downloading youtube videos
 yt-dlp
-mediapipe
+mediapipe == 0.10.9
 opencv-python
