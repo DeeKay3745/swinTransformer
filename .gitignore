@@ -6,7 +6,7 @@ venv/
 Dataset/
 # C extensions
 *.so
-
+/audiofile/venv/
 # Distribution / packaging
 .Python
 build/
