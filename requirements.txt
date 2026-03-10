@@ -22,3 +22,12 @@ pydub
 openpyxl
 whisperx
 #install sudo ffmpeg
+
+# RAG app
+pypdf2
+sentence-transformers
+faiss-cpu
+chromadb 
+anthropic 
+tiktoken 
+openai 
