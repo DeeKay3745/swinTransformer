@@ -1,18 +1,19 @@
-import React from "react";
 import {Composition} from "remotion";
-import {VSRDemo} from "./VSRDemo";
+import {PipelineDemo} from "./PipelineDemo";
 
-export const RemotionRoot: React.FC = () => {
-  return (
-    <>
-      <Composition
-        id="VSRDemo"
-        component={VSRDemo}
-        durationInFrames={450}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-    </>
-  );
+export const RemotionRoot = () => {
+
+return (
+
+<Composition
+id="PipelineDemo"
+component={PipelineDemo}
+durationInFrames={345}
+fps={30}
+width={1920}
+height={1080}
+/>
+
+);
+
 };
