@@ -7,6 +7,12 @@ Dataset/
 # C extensions
 *.so
 /audiofile/venv/
+/cropvideo/hemant_phase7_marathi/
+/cropvideo/hemant_phase7.wav
+/cropvideo/sahil_phase7.wav
+/cropvideo/sahil_phse7_hindi/
+/cropvideo/sahil_phase7(1).wav
+/cropvideo/sahil_pahse7_marathi/
 # Distribution / packaging
 .Python
 build/
