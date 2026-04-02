@@ -12,7 +12,9 @@ Dataset/
 /cropvideo/sahil_phase7.wav
 /cropvideo/sahil_phase7_hindi/
 /cropvideo/sahil_phase7(1).wav
-/cropvideo/sahil_pahse7_marathi/
+
+/cropvideo/sahil_phase7_marathi/
+
 # Distribution / packaging
 .Python
 build/
