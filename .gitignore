@@ -12,9 +12,16 @@ Dataset/
 /cropvideo/sahil_phase7.wav
 /cropvideo/sahil_phase7_hindi/
 /cropvideo/sahil_phase7(1).wav
-
+/cropvideo/Atul_Demble_Phase5_Sev_HIndi/
+/cropvideo/sahil_phase7_marathi(1)/
+/cropvideo/hemant_phase7_marathi(1)/
 /cropvideo/sahil_phase7_marathi/
+/NormalSpeech/Female/
+/cropvideo/Atul_Demble_phase5_*
+/VariationalAutoencoders/data/
 
+/NormalSpeech/Female.wav
+/NormalSpeech/Male.wav
 # Distribution / packaging
 .Python
 build/
