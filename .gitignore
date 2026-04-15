@@ -19,9 +19,11 @@ Dataset/
 /NormalSpeech/Female/
 /cropvideo/Atul_Demble_phase5_*
 /VariationalAutoencoders/data/
-
+/hubert/sahil_phase7_ser_english.wav
 /NormalSpeech/Female.wav
 /NormalSpeech/Male.wav
+/hubert/avhubert
+
 # Distribution / packaging
 .Python
 build/
