@@ -23,7 +23,7 @@ Dataset/
 /NormalSpeech/Female.wav
 /NormalSpeech/Male.wav
 /hubert/avhubert
-
+/hubert/sahil_phase7_sev_english.wav 
 # Distribution / packaging
 .Python
 build/
