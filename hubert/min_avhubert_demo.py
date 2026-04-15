@@ -97,34 +97,34 @@ def train_demo():
         epoch_loss=0.0
         epoch_acc_masked=0.0
         epoch_acc_all =0.0
-    for step in range(steps_per_epoch):
-        video, audio, targets = generator.generate_batch(
+        for step in range(steps_per_epoch):
+            video, audio, targets = generator.generate_batch(
             batch_size=batch_size,
             seq_len=seq_len,
             noise_std=0.20,
             )
-        video_masked, video_mask =apply_time_mask(video, mask_prob=mask_prob)
-        audio_masked, audio_mask = apply_time_mask(audio, mask_prob=mask_prob)
-        mask = video_mask | audio_mask
-        logits = model(video_masked, audio_masked)
-        logits_flat = logits.reshape(-1, vocab_size)
-        targets_flat = targets.reshape(-1)
-        mask_flat = mask.reshape(-1)
-        if mask_flat.sum()==0:
-            continue
-        masked_logits = logits_flat[mask_flat]
-        masked_targets = targets_flat[mask_flat]
-        loss = criterion(masked_logits, masked_targets)
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-        with torch.no_grad():
-            preds = logits.argmax(dim=-1)
-            acc_all = (preds==targets).float().mean().item()
-            if mask.sum()>0:
-                acc_masked =(preds[mask]==targets[mask]).float().mean().item()
-            else:
-                acc_masked =0.0
+            video_masked, video_mask =apply_time_mask(video, mask_prob=mask_prob)
+            audio_masked, audio_mask = apply_time_mask(audio, mask_prob=mask_prob)
+            mask = video_mask | audio_mask
+            logits = model(video_masked, audio_masked)
+            logits_flat = logits.reshape(-1, vocab_size)
+            targets_flat = targets.reshape(-1)
+            mask_flat = mask.reshape(-1)
+            if mask_flat.sum()==0:
+                continue
+            masked_logits = logits_flat[mask_flat]
+            masked_targets = targets_flat[mask_flat]
+            loss = criterion(masked_logits, masked_targets)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            with torch.no_grad():
+                preds = logits.argmax(dim=-1)
+                acc_all = (preds==targets).float().mean().item()
+                if mask.sum()>0:
+                    acc_masked =(preds[mask]==targets[mask]).float().mean().item()
+                else:
+                    acc_masked =0.0
             epoch_loss +=loss.item()
             epoch_acc_all+= acc_all
             epoch_acc_masked+= acc_masked
